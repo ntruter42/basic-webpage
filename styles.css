@@ -1,5 +1,7 @@
-body p {
-    font-family: 'Zen Maru Gothic';font-size: 22px;
+body {
+    font-family: "Red Hat Display";
+	/* font-weight: 300; */
+	/* font-size: 22px; */
 }
 
 #intro_section {
@@ -24,6 +26,16 @@ body p {
 #city_photo {
     width: 40%;
     height: auto;
+}
+
+#city_chapter {
+	outline: 1px solid black;
+	padding: 20px;
+}
+
+#language_chapter {
+	outline: 1px solid black;
+	padding: 20px;
 }
 
 table {
