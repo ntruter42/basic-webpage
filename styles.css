@@ -21,7 +21,18 @@ body p {
     flex-direction: row;
 }
 
-#my_city {
-    width: 20%;
+#city_photo {
+    width: 40%;
     height: auto;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+  
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
 }
