@@ -1,0 +1,8 @@
+#intro_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro {
+    margin: auto;
+}
