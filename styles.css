@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -7,12 +7,25 @@ body {
 	padding: 20px;
 }
 
-h1, h2 {
-	font-weight: 800;
+h1 {
+	font-size: 2em !important;
+}
+
+h2, h3 {
+	outline: 1px solid pink;
+	font-size: 1.5em;
+	font-weight: 600;
 }
 
 p {
+	outline: 1px solid skyblue;
 	font-weight: 300;
+}
+
+#intro_section, #city_section, #language_section, #historical_section {
+	/* background-color: #dfdfff; */
+	margin: 10px;
+	padding: 10px;
 }
 
 #intro_section {
@@ -27,7 +40,7 @@ p {
 }
 
 #intro_section img {
-	width: 25%;
+	width: 30%;
 	max-width: 200px;
 	height: auto;
 	padding-right: 12%;
@@ -43,37 +56,37 @@ p {
 
 #city {
 	outline: 1px solid lightgray;
-	/* display: flex;
-    flex-direction: row; */
+	display: flex;
+    flex-direction: row;
 }
 
 #city img {
-	width: 40vw;
+	width: 40%;
+	min-width: 250px;
     height: 40%;
-	float: left;
-	margin-right: 20px;
+	margin-block: auto;
+	/* object-fit: cover;
+	object-position: center; */
 }
 
 #city p {
-	padding-inline: 12%;
-	width: 60%;
+	padding-inline: 4%;
+	width: 80%;
     height: auto;
+	font-size: 2.4vw;
 }
 
-/*
-#city_chapter {
+#language_section {
 	outline: 1px solid lightgray;
-	padding: 20px;
+	/* margin: auto; */
 }
 
-#language_chapter {
-	outline: 1px solid black;
-	padding: 20px;
+#language {
+	outline: 1px solid lightgray;
 }
 
-.historical_chapter {
-	display: flex;
-    flex-direction: row;
+#language p {
+	width: 80%;
 }
 
 table {
@@ -86,4 +99,51 @@ td, th {
     padding: 8px;
     text-align: left;
 }
+
+#historical {
+	display: flex;
+	flex-direction: row;
+}
+
+.historical_place {
+	width: 30%;
+	margin: auto;
+}
+
+.historical_chapter {
+	outline: 2px solid red;
+	/* display: flex;
+	flex-direction: row; */
+	display: inline-flex;
+}
+
+.historical_chapter p {
+	width: 45%;
+	font-size: 60%;
+}
+
+.historical_chapter img {
+	width: 45%;
+	height: 45%;
+}
+
+/*
+#language_chapter {
+	outline: 1px solid black;
+	padding: 20px;
+}
+
+.historical_chapter {
+	display: flex;
+    flex-direction: row;
+}
 */
+
+/* Uncomment next block to remove outlines */
+/* div > * {
+	outline: none !important;
+}
+
+* {
+	outline: none !important;
+} */
