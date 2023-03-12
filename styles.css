@@ -1,41 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
 body {
-    font-family: "Red Hat Display";
-	/* font-weight: 300; */
-	/* font-size: 22px; */
+    font-family: "Montserrat", sans-serif;
+	max-width: 960px;
+	margin: auto;
+	padding: 20px;
+}
+
+h1, h2 {
+	font-weight: 800;
+}
+
+p {
+	font-weight: 300;
 }
 
 #intro_section {
-    display: flex;
+	outline: 1px solid lightgray;
+	display: flex;
     flex-direction: row;
+	margin: auto;
 }
 
 .intro {
-    margin: auto;
+	margin: auto;
 }
 
-#my_photo {
-    width: 20%;
-    height: auto;
+#intro_section img {
+	width: 25%;
+	max-width: 200px;
+	height: auto;
+	padding-right: 12%;
+}
+
+#intro_section h1 {
+	padding-left: 8%;
+}
+
+#city_section {
+	outline: 1px solid lightgray;
 }
 
 #city {
-    display: flex;
+	outline: 1px solid lightgray;
+	display: flex;
     flex-direction: row;
 }
 
-#city_photo {
-    width: 40%;
+#city img {
+	width: 40%;
     height: auto;
 }
 
+#city p {
+	padding-inline: 12%;
+	width: 60%;
+    height: auto;
+}
+
+/*
 #city_chapter {
-	outline: 1px solid black;
+	outline: 1px solid lightgray;
 	padding: 20px;
 }
 
 #language_chapter {
 	outline: 1px solid black;
 	padding: 20px;
+}
+
+.historical_chapter {
+	display: flex;
+    flex-direction: row;
 }
 
 table {
@@ -48,3 +84,4 @@ td, th {
     padding: 8px;
     text-align: left;
 }
+*/
