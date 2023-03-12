@@ -43,13 +43,15 @@ p {
 
 #city {
 	outline: 1px solid lightgray;
-	display: flex;
-    flex-direction: row;
+	/* display: flex;
+    flex-direction: row; */
 }
 
 #city img {
-	width: 40%;
-    height: auto;
+	width: 40vw;
+    height: 40%;
+	float: left;
+	margin-right: 20px;
 }
 
 #city p {
