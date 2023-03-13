@@ -7,7 +7,6 @@
 }
 
 .landing_section {
-	outline: 1px solid white;
 	text-align: center;
 }
 
@@ -26,6 +25,13 @@
 	color: white;
 	text-decoration: none;
 	font-weight: 600;
+	/* background: -webkit-linear-gradient(180deg, peru, navajowhite);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+.link_1:hover > .link_2 {
+	color: black !important;
 }
 
 html {
@@ -106,7 +112,9 @@ p {
 	padding-inline: 4%;
 	width: 80%;
     height: auto;
-	font-size: 2.4vw;
+	max-height: 200px;
+	font-size: 1.2em;
+	overflow: hidden;
 }
 
 #language_section {
@@ -143,6 +151,12 @@ td, th {
 	margin: auto;
 }
 
+#historical_section h3 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 .historical_chapter {
 	outline: 2px solid red;
 	/* display: flex;
@@ -151,26 +165,27 @@ td, th {
 }
 
 .historical_chapter p {
-	width: 45%;
+	width: 50%;
 	font-size: 60%;
+	/* padding-inline-end: 10px; */
 }
 
 .historical_chapter img {
-	width: 45%;
-	height: 45%;
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+	/* padding: 10px; */
 }
 
-/*
-#language_chapter {
-	outline: 1px solid black;
-	padding: 20px;
+.helper {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
-.historical_chapter {
-	display: flex;
-    flex-direction: row;
+@media(max-width: 960px) {
+	
 }
-*/
 
 /* Uncomment next block to remove outlines */
 /* div > * {
