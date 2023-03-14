@@ -1,40 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
 
 html {
-	height: 100%;
+	/* height: 100%; */
 	font-family: "Montserrat", sans-serif;
+	/* background-image: linear-gradient(45deg, white, grey); */
+	background-color: white;
 }
 
 body {
 	/* height: 100%; */
 	margin: auto;
 	max-width: 1280px; /* 1280px */
+	padding-inline: 20px;
 }
 
 h1 {
 	outline: 1px solid blue;
-	font-size: 2em;
 	font-weight: 800;
 }
 
 h2, h3 {
 	outline: 1px solid blue;
-	font-size: 1.5em;
 	font-weight: 600;
+}
+
+h2 {
+	margin-top: 100px;
 }
 
 p {
 	outline: 1px solid cyan;
 	font-weight: 300;
+	margin-inline: 10px;
+
 }
 
 img {
 	outline: 3px solid red;
+	border-radius: 10px;
 }
 
 /* body */
 #landing_page {
-	background-image: linear-gradient(45deg, saddlebrown, black, saddlebrown);
+	/* background-image: linear-gradient(45deg, white, black, white); */
 }
 
 #landing_section {
@@ -73,6 +81,7 @@ img {
 	margin-right: 8%;
 	width: 30%;
 	height: auto;
+	margin-right: 20%;
 }
 
 #intro_section img {
@@ -119,6 +128,7 @@ img {
 
 #language p {
 	width: 90%;
+	margin-inline: 0px;
 }
 
 table {
@@ -143,14 +153,14 @@ td, th {
 
 .historical_place {
 	width: 30%;
-	margin: auto;
+	margin-inline: auto;
 }
 
-#historical_section h3 {
+/* #historical_section h3 {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-}
+} */
 
 .historical_chapter {
 	outline: 1px solid lightgray;
@@ -163,23 +173,32 @@ td, th {
 	width: 50%;
 	font-size: 80%;
 	/* padding-inline-end: 10px; */
+	margin-block: auto;
 }
 
 .historical_chapter img {
-	float: right;
+
 	width: 50%;
 	height: 50%;
 	object-fit: cover;
 	/* padding: 10px; */
+	margin-block: auto;
+
 }
 
-@media(max-width: 960px) {
+#end {
+	padding-top: 50px;
+}
+
+@media(max-width: 800px) {
 	#intro_section {
 		flex-direction: column;
 	}
 
 	#intro_section h1 {
 		padding-left: 0%;
+		font-size: 1.4em;
+		margin-block: 20px;
 	}
 
 	#intro_section img {
@@ -191,7 +210,7 @@ td, th {
 		margin: auto;
 		padding-right: 0%;
 	}
-
+	
 	#city_chapter {
 		flex-direction: column;
 	}
@@ -203,15 +222,15 @@ td, th {
 	
 	#city_chapter img {
 		margin: auto;
-		width: 90%;
+		width: 100%;
 		object-fit: cover;
 		object-position: top;
 	}
 	
 	#city_chapter p {
 		margin: auto;
-		margin-top: 10px;
-		width: 90%;
+		margin-left: 10px;
+		width: 100%;
 	}
 
 	#historical {
@@ -221,18 +240,29 @@ td, th {
 	.historical_place {
 		width: 80%;
 		margin: auto;
+		margin-block: 10px;
 	}
 
 	#historical_place_2 .historical_chapter {
 		direction: rtl;
 	}
+
+	.historical_chapter p {
+		width: 80%;
+		font-size: 80%;
+	}
 }
 
 /* Uncomment next block to remove outlines */
-/* div > * {
+
+div > * {
 	outline: none !important;
 }
 
 * {
 	outline: none !important;
-} */
+}
+
+img {
+	outline: 3px solid lightgrey !important;
+}
