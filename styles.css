@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
 
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: "Montserrat", sans-serif;
+	max-width: 1400px;
+	margin: auto;
+	/* padding: 20px; */
+}
+
+h1 {
+	outline: 1px solid pink;
+	font-size: 2em !important;
+}
+
+h2, h3 {
+	outline: 1px solid pink;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+p {
+	outline: 1px solid skyblue;
+	font-weight: 300;
+}
+
+img {
+	border-radius: 10px;
+}
+
 #landing_page {
 	background-image: linear-gradient(45deg, saddlebrown, black, saddlebrown);
 	color: white;
@@ -11,6 +43,7 @@
 }
 
 .landing_section h1 {
+	outline: none;
 	/* padding-top: 35vh; */
 	text-align: center;
 }
@@ -30,39 +63,12 @@
 	-webkit-text-fill-color: transparent; */
 }
 
-.link_1:hover > .link_2 {
+.link_1:hover + .link_2 {
 	color: black !important;
 }
 
-html {
-	height: 100%;
-}
-
-body {
-	min-height: 100%;
-    font-family: "Montserrat", sans-serif;
-	max-width: 960px;
-	margin: auto;
-	padding: 20px;
-}
-
-h1 {
-	font-size: 2em !important;
-}
-
-h2, h3 {
-	outline: 1px solid pink;
-	font-size: 1.5em;
-	font-weight: 600;
-}
-
-p {
-	outline: 1px solid skyblue;
-	font-weight: 300;
-}
-
 #intro_section, #city_section, #language_section, #historical_section {
-	/* background-color: #dfdfff; */
+	/* background-color: #f0f0f0; */
 	margin: 10px;
 	padding: 10px;
 }
@@ -71,7 +77,6 @@ p {
 	outline: 1px solid lightgray;
 	display: flex;
     flex-direction: row;
-	margin: auto;
 }
 
 .intro {
@@ -79,9 +84,13 @@ p {
 }
 
 #intro_section img {
-	width: 30%;
-	max-width: 200px;
 	height: auto;
+	max-width: 200px;
+}
+
+#my_photo {
+	outline: 2px solid red;
+	width: 30%;
 	padding-right: 12%;
 }
 
@@ -104,8 +113,8 @@ p {
 	min-width: 250px;
     height: 40%;
 	margin-block: auto;
-	/* object-fit: cover;
-	object-position: center; */
+	object-fit: cover;
+	object-position: center;
 }
 
 #city p {
@@ -141,6 +150,10 @@ td, th {
     text-align: left;
 }
 
+#historical_section {
+	outline: 1px solid lightgray;
+}
+
 #historical {
 	display: flex;
 	flex-direction: row;
@@ -158,7 +171,6 @@ td, th {
 }
 
 .historical_chapter {
-	outline: 2px solid red;
 	/* display: flex;
 	flex-direction: row; */
 	display: inline-flex;
@@ -177,14 +189,30 @@ td, th {
 	/* padding: 10px; */
 }
 
-.helper {
+/* .helper {
 	display: inline-block;
     height: 100%;
     vertical-align: middle;
-}
+} */
 
 @media(max-width: 960px) {
+	#intro_section {
+		flex-direction: column;
+	}
+
+	#intro_section h1 {
+		padding-left: 0%;
+	}
+
+	#intro_section img {
+		width: 100%;
+		max-width: 400px;
+	}
 	
+	#my_photo {
+		margin: auto;
+		padding-right: 0%;
+	}
 }
 
 /* Uncomment next block to remove outlines */
