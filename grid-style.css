@@ -1,26 +1,62 @@
-html {
-    width: 100%;
-}
-
-body {
-    width: 100%;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid black;
+	border: 1px solid black;
+}
+/* TODO: center text vertically
+.center-vertical {
+} */
+
+.float-right-sm {
+	float: right;
+}
+
+.float-left-sm {
+	float: left;
 }
 
 @media only screen and (min-width: 80em) {
-    .section-container {
-        max-width: 1280px;
-        margin-inline: auto;
-    }
+	.section-container {
+		max-width: 80em;
+		margin-inline: auto;
+	}
 }
 
-/* @media only screen and (max-width: 60em) {
+@media only screen and (min-width: 45em) {
+	.float-left {
+		float: left;
+	}
+
+	.float-right {
+		float: right;
+	}
+}
+
+.row {
+	outline: 2px solid cyan;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	outline: 2px solid red;
+}
+
+/* div > * {
+	outline: none !important;
+}
+* {
+	outline: none !important;
 } */

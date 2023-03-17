@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link rel="stylesheet" href="simple-grid.css">
+		<!-- <link rel="stylesheet" href="simple-grid.min.css"> -->
         <link rel="stylesheet" href="grid-style.css">
         <title>...using SimpleGrid</title>
     </head>
@@ -17,8 +18,8 @@
 
         <!-- City Section Start -->
 		<div class="row section-container">
-            <h2>Which city? Israel</h2>
-            <div>
+            <h2 class="col-12">Which city? Israel</h2>
+            <div class="row">
                 <img class="col-4" src="images/israel.jpg" alt="Israel">
                 <p class="col-8">
 					Israel has a rich historical and religious background, including Jerusalem's Old City and the Western Wall.
@@ -31,13 +32,13 @@
 
         <!-- Language Section Start -->
 		<div class="row section-container">
-            <h2>Foreign Language - Spanish</h2>
-            <div>
-                <p>
+            <h2 class="col-12">Foreign Language - Spanish</h2>
+            <div class="row">
+                <p class="col-12">
                     I'd love to learn Spanish because it is very popular around the world and a lot of the places I'd like to visit have Spanish as one of the top 3 most spoken languages.
 					Spanish opens up many opportunities to work in Spain, Argentina and Mexico or Latin America.
 				</p>
-                <table>
+                <table class="col-12">
                     <tr>
                         <th>English</th>
                         <th>Spanish</th>
@@ -60,62 +61,44 @@
 
         <!-- Historical Section Start -->
 		<div class="row section-container">
-            <h2>Historical Places</h2>
+            <h2 class="col-12">Historical Places</h2>
             <div class="row">
                 <!-- Historical Place 1 -->
 				<div class="col-4 his-place">
-                    <h3>Castle of Goodhope</h3>
+                    <h4>Castle of Goodhope</h4>
 					<div class="row">
-                        <ul class="col-5">
-                            <li>
-                                Built in 1666 by Dutch East India Company.
-                            </li>
-                            <li>
-                                Oldest surviving colonial building in South Africa.
-                            </li>
-                            <li>
-                                Served as military headquarters and prison.
-                            </li>
-                        </ul>
-                        <img class="col-5" src="images/castle_of_goodhope_bg.jpg" alt="Castle of Goodhope">
+						<img class="float-right float-right-sm col-6 col-6-sm" src="images/castle_of_goodhope_bg.jpg" alt="Castle of Goodhope">
+                        <p>
+							Built in 1666 by Dutch East India Company.
+							<br>Oldest surviving colonial building in South Africa.
+							<br>Served as military headquarters and prison.
+						</p>
 					</div>
 				</div>
 
                 <!-- Historical Place 2 -->
 				<div class="col-4 his-place">
-					<h3>City Hall</h3>
+					<h4>City Hall</h4>
 					<div class="row">
-                        <ul class="col-5">
-                            <li>
-                                Built in 1905.
-                            </li>
-                            <li>
-                                Houses the offices of Mayor and City Council.
-                            </li>
-                            <li>
-                                Site of Nelson Mandela's first public speech after release from prison.
-                            </li>
-                        </ul>
-                        <img class="col-5" src="images/city_hall_bg.jpg" alt="City Hall">
+						<img class="float-right float-left-sm col-6 col-6-sm" src="images/city_hall_bg.jpg" alt="City Hall">
+						<p>
+							Built in 1905.
+							<br>Houses the offices of Mayor and City Council.
+							<br>Site of Nelson Mandela's first public speech after release from prison.
+						</p>
 					</div>
 				</div>
                 
                 <!-- Historical Place 3 -->
-				<div class="col-4 col-12-sm his-place">
-                    <h3>District Six Museum</h3>
+				<div class="col-4 his-place">
+                    <h4>District Six Museum</h4>
 					<div class="row">
-                        <ul class="col-5">
-                            <li>
-                                Established in 1994.
-                            </li>
-                            <li>
-                                Commemorates Apartheid's forced removals, 1966-1982.
-                            </li>
-                            <li>
-                                Features personal stories, photographs, and exhibitions.
-                            </li>
-                        </ul>
-                        <img class="col-5" src="images/district_six_bg.jpg" alt="District Six Museum">
+						<img class="float-right float-right-sm col-6 col-6-sm" src="images/district_six_bg.jpg" alt="District Six Museum">
+                        <p>
+							Established in 1994.
+							<br>Commemorates Apartheid's forced removals, 1966-1982.
+							<br>Features personal stories, photographs, and exhibitions.
+						</p>
 					</div>
 				</div>
 
