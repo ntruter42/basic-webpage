@@ -3,7 +3,7 @@
 html {
 	/* height: 100%; */
 	font-family: "Montserrat", sans-serif;
-	background-image: url('https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/08/NorthernLights5.jpg') /*linear-gradient(45deg, #FFDEAD, grey)*/;
+	background: url('https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/08/NorthernLights5.jpg') no-repeat top center fixed;
 }
 
 body {

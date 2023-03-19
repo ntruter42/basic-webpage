@@ -1,14 +1,51 @@
+html {
+	background: url('https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/08/NorthernLights5.jpg') no-repeat top center fixed;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td {
-	border: 1px solid black;
+	border: 1px solid white;
 }
-/* TODO: center text vertically
-.center-vertical {
-} */
+
+.center {
+	background-color: magenta;
+	margin: auto !important;
+	align-items: center !important;
+	align-self: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+	justify-self: center !important;
+	justify-items: center !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 14% !important; /* temp fix for heading centering */
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	font-size: 0.8em !important;
+}
+
+img {
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.section-container {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .float-right-sm {
 	float: right;
@@ -33,6 +70,10 @@ th, td {
 	.float-right {
 		float: right;
 	}
+
+	img {
+		margin-right: 10px;
+	}
 }
 
 .row {
@@ -54,9 +95,14 @@ th, td {
 	outline: 2px solid red;
 }
 
-/* div > * {
+div > * {
 	outline: none !important;
 }
 * {
 	outline: none !important;
-} */
+	text-shadow: 1px 1px 1px black, 1px 1px 10px black;
+}
+
+img {
+	outline: 3px solid white !important;
+}
